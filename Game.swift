@@ -22,6 +22,7 @@ class Game: NSManagedObject {
     @NSManaged var noResponses: Bool
     @NSManaged var inProgress: Bool
     @NSManaged var isFinished: Bool
+    @NSManaged var currentCategoryArray : Array<String>
     
     
     enum GameType: Int {

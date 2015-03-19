@@ -25,10 +25,8 @@ class GameSelectionViewCell: UITableViewCell {
     
     class func cellForTableView(tableView: UITableView, withGameDateType: String, withGameStatus: String) -> GameSelectionViewCell {
         var newCell = tableView.dequeueReusableCellWithIdentifier("GameSelectionCell") as! GameSelectionViewCell
-        
         newCell.gameDateType = withGameDateType
         newCell.gameStatus = withGameStatus
-        
         return newCell
     }
    

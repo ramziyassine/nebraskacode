@@ -47,15 +47,11 @@ class GameSelectionViewController: UIViewController {
             destinationController.currentContext = moc
             destinationController.allGames = allGames
         }
-        
-        
-        
-        
-        
-        
-        
     }
-}
+    
+    @IBAction func unwindFromNewGamePopover(sender: UIStoryboardSegue!) {
+        gameTable.reloadData()
+    }}
 
 
 
@@ -67,6 +63,8 @@ extension GameSelectionViewController: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        var cell = UITableViewCell()
         let game = self.allGames[indexPath.row]
         let formatter = NSDateFormatter()
         formatter.dateFormat = "MMMM dd, YYYY"
@@ -77,7 +75,21 @@ extension GameSelectionViewController: UITableViewDataSource {
         if game.isFinished {
             statusString += " (FINISHED)"
         }
+
         let selectionCell = GameSelectionViewCell.cellForTableView(tableView, withGameDateType: "\(game.stringForEnum(game.gameType.integerValue).uppercaseString) - \(formatter.stringFromDate(game.gameDate).uppercaseString)", withGameStatus: statusString)
         return selectionCell
     }
 }
+
+
+
+extension GameSelectionViewController: UITableViewDelegate {
+    func  tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let selectedIndex = indexPath.row
+        let game = allGames[indexPath.row]
+        self.performSegueWithIdentifier("GameStartSeqgue", sender: self)
+    }
+}
+
+
+

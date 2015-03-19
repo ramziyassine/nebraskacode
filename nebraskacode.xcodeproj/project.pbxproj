@@ -15,9 +15,12 @@
 		A8E5FE721ABB03C900F25EA7 /* nebraskacodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5FE711ABB03C900F25EA7 /* nebraskacodeTests.swift */; };
 		A8E5FE7C1ABB052B00F25EA7 /* GameSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5FE7B1ABB052B00F25EA7 /* GameSelectionViewController.swift */; };
 		A8E5FE7E1ABB08F300F25EA7 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5FE7D1ABB08F300F25EA7 /* Game.swift */; };
-		A8E5FE801ABB104B00F25EA7 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = A8E5FE7F1ABB104B00F25EA7 /* title.png */; };
 		A8E5FE821ABB155B00F25EA7 /* GameSelectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5FE811ABB155B00F25EA7 /* GameSelectionViewCell.swift */; };
 		A8E5FE841ABB1D4D00F25EA7 /* NewGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5FE831ABB1D4D00F25EA7 /* NewGameViewController.swift */; };
+		A8E5FE861ABB326C00F25EA7 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5FE851ABB326C00F25EA7 /* CategoryViewController.swift */; };
+		A8E5FE881ABB4CD500F25EA7 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = A8E5FE871ABB4CD500F25EA7 /* play.png */; };
+		A8E5FE8A1ABB4D5100F25EA7 /* GameBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5FE891ABB4D5100F25EA7 /* GameBoardViewController.swift */; };
+		A8E5FE8C1ABB4F0300F25EA7 /* GameBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5FE8B1ABB4F0300F25EA7 /* GameBoardCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +46,12 @@
 		A8E5FE711ABB03C900F25EA7 /* nebraskacodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nebraskacodeTests.swift; sourceTree = "<group>"; };
 		A8E5FE7B1ABB052B00F25EA7 /* GameSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectionViewController.swift; sourceTree = "<group>"; };
 		A8E5FE7D1ABB08F300F25EA7 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		A8E5FE7F1ABB104B00F25EA7 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = title.png; path = ../title.png; sourceTree = "<group>"; };
 		A8E5FE811ABB155B00F25EA7 /* GameSelectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectionViewCell.swift; sourceTree = "<group>"; };
 		A8E5FE831ABB1D4D00F25EA7 /* NewGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGameViewController.swift; sourceTree = "<group>"; };
+		A8E5FE851ABB326C00F25EA7 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		A8E5FE871ABB4CD500F25EA7 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		A8E5FE891ABB4D5100F25EA7 /* GameBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoardViewController.swift; sourceTree = "<group>"; };
+		A8E5FE8B1ABB4F0300F25EA7 /* GameBoardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoardCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,13 +95,16 @@
 			isa = PBXGroup;
 			children = (
 				A8E5FE581ABB03C900F25EA7 /* AppDelegate.swift */,
+				A8E5FE891ABB4D5100F25EA7 /* GameBoardViewController.swift */,
 				A8E5FE5F1ABB03C900F25EA7 /* Main.storyboard */,
-				A8E5FE7F1ABB104B00F25EA7 /* title.png */,
+				A8E5FE8B1ABB4F0300F25EA7 /* GameBoardCell.swift */,
+				A8E5FE871ABB4CD500F25EA7 /* play.png */,
 				A8E5FE621ABB03C900F25EA7 /* Images.xcassets */,
 				A8E5FE641ABB03C900F25EA7 /* LaunchScreen.xib */,
 				A8E5FE5A1ABB03C900F25EA7 /* nebraskacode.xcdatamodeld */,
 				A8E5FE561ABB03C900F25EA7 /* Supporting Files */,
 				A8E5FE7B1ABB052B00F25EA7 /* GameSelectionViewController.swift */,
+				A8E5FE851ABB326C00F25EA7 /* CategoryViewController.swift */,
 				A8E5FE811ABB155B00F25EA7 /* GameSelectionViewCell.swift */,
 				A8E5FE831ABB1D4D00F25EA7 /* NewGameViewController.swift */,
 			);
@@ -208,8 +217,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8E5FE611ABB03C900F25EA7 /* Main.storyboard in Resources */,
+				A8E5FE881ABB4CD500F25EA7 /* play.png in Resources */,
 				A8E5FE661ABB03C900F25EA7 /* LaunchScreen.xib in Resources */,
-				A8E5FE801ABB104B00F25EA7 /* title.png in Resources */,
 				A8E5FE631ABB03C900F25EA7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,7 +238,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8E5FE591ABB03C900F25EA7 /* AppDelegate.swift in Sources */,
+				A8E5FE8A1ABB4D5100F25EA7 /* GameBoardViewController.swift in Sources */,
+				A8E5FE8C1ABB4F0300F25EA7 /* GameBoardCell.swift in Sources */,
 				A8E5FE5C1ABB03C900F25EA7 /* nebraskacode.xcdatamodeld in Sources */,
+				A8E5FE861ABB326C00F25EA7 /* CategoryViewController.swift in Sources */,
 				A8E5FE7C1ABB052B00F25EA7 /* GameSelectionViewController.swift in Sources */,
 				A8E5FE821ABB155B00F25EA7 /* GameSelectionViewCell.swift in Sources */,
 				A8E5FE7E1ABB08F300F25EA7 /* Game.swift in Sources */,
